@@ -4,81 +4,235 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "Launch lx",
-            "request": "launch",
-            "mainClass": "lx",
-            "projectName": "study_eab82af0"
-        },
-        {
-            "type": "java",
-            "name": "Launch dogtest",
-            "request": "launch",
-            "mainClass": "dog.dogtest",
-            "projectName": "study_eab82af0"
-        },
-        {
-            "type": "java",
-            "name": "Launch EmployeeTest",
-            "request": "launch",
-            "mainClass": "EmployeeTest",
-            "projectName": "study_eab82af0"
-        },
-        {
-            "type": "java",
-            "name": "Launch tomi",
-            "request": "launch",
-            "mainClass": "tomi",
-            "projectName": "study_eab82af0"
-        },
-        {
-            "type": "java",
-            "name": "Launch Puppy",
-            "request": "launch",
-            "mainClass": "Puppy",
-            "projectName": "study_eab82af0"
-        },
-        {
-            "type": "java",
-            "name": "Launch first",
-            "request": "launch",
-            "mainClass": "first",
-            "projectName": ""
-        },
-        {
-            "name": "Java",
-            "type": "java",
-            "request": "launch",
-            "stopOnEntry": true,
-            "jdkPath": "${env:JAVA_HOME}/bin",
-            "cwd": "${fileDirname}",
-            "startupClass": "${fileBasenameNoExtension}",
-            "classpath": [
-                ".",
-                "${fileDirname}"
-            ]
-        },
-        {
-            "name": "Java Console App",
-            "type": "java",
-            "request": "launch",
-            "stopOnEntry": true,
-            "jdkPath": "${env:JAVA_HOME}/bin",
-            "cwd": "${fileDirname}",
-            "startupClass": "${fileBasenameNoExtension}",
-            "classpath": [
-                ".",
-                "${fileDirname}"
-            ],
-            "externalConsole": true
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        }
+      {
+        "type": "java",
+        "name": "Launch testzhengz",
+        "request": "launch",
+        "mainClass": "emm.testzhengz",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch BankDemo",
+        "request": "launch",
+        "mainClass": "Account.BankDemo",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch hero",
+        "request": "launch",
+        "mainClass": "emm.hero",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch Mouse",
+        "request": "launch",
+        "mainClass": "Animal.Mouse",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch Penguin",
+        "request": "launch",
+        "mainClass": "Animal.Penguin",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch abs",
+        "request": "launch",
+        "mainClass": "abs",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch shape",
+        "request": "launch",
+        "mainClass": "shape",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch Change",
+        "request": "launch",
+        "mainClass": "Change",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch comprehensive",
+        "request": "launch",
+        "mainClass": "comprehensive",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch condition",
+        "request": "launch",
+        "mainClass": "condition",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch square",
+        "request": "launch",
+        "mainClass": "square",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch muli",
+        "request": "launch",
+        "mainClass": "muli",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch Test",
+        "request": "launch",
+        "mainClass": "Test",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch diamond",
+        "request": "launch",
+        "mainClass": "diamond",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch While",
+        "request": "launch",
+        "mainClass": "While",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch whlie",
+        "request": "launch",
+        "mainClass": "dog.whlie",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch teat1",
+        "request": "launch",
+        "mainClass": "dog.teat1",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch test1",
+        "request": "launch",
+        "mainClass": "dog.test1",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch Test",
+        "request": "launch",
+        "mainClass": "dog.Test",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch Employee",
+        "request": "launch",
+        "mainClass": "dog.Employee",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch Employee",
+        "request": "launch",
+        "mainClass": "Employee",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch dogAge",
+        "request": "launch",
+        "mainClass": "dog.dogAge",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch lx",
+        "request": "launch",
+        "mainClass": "lx",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch dogtest",
+        "request": "launch",
+        "mainClass": "dog.dogtest",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch EmployeeTest",
+        "request": "launch",
+        "mainClass": "EmployeeTest",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch tomi",
+        "request": "launch",
+        "mainClass": "tomi",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch Puppy",
+        "request": "launch",
+        "mainClass": "Puppy",
+        "projectName": "study_eab82af0"
+      },
+      {
+        "type": "java",
+        "name": "Launch first",
+        "request": "launch",
+        "mainClass": "first",
+        "projectName": ""
+      },
+      {
+        "name": "Java",
+        "type": "java",
+        "request": "launch",
+        "stopOnEntry": true,
+        "jdkPath": "${env:JAVA_HOME}/bin",
+        "cwd": "${fileDirname}",
+        "startupClass": "${fileBasenameNoExtension}",
+        "classpath": [
+          ".",
+          "${fileDirname}"
+        ]
+      },
+      {
+        "name": "Java Console App",
+        "type": "java",
+        "request": "launch",
+        "stopOnEntry": true,
+        "jdkPath": "${env:JAVA_HOME}/bin",
+        "cwd": "${fileDirname}",
+        "startupClass": "${fileBasenameNoExtension}",
+        "classpath": [
+          ".",
+          "${fileDirname}"
+        ],
+        "externalConsole": true
+      },
+      {
+        "type": "java",
+        "name": "Launch Current File",
+        "request": "launch",
+        "mainClass": "${file}"
+      }
     ]
     
 }

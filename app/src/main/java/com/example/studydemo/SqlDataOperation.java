@@ -1,7 +1,7 @@
 package com.example.studydemo;
 
 import android.content.ContentValues;
-import android.database.Cursor;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,13 +13,14 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SqlDataOperation extends AppCompatActivity {
-    private MyDatabaseHelper myDatabaseHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sql_data_operation);
         TextView textView=findViewById(R.id.onetextview);
         textView.setText("新增书本信息");
+        MyDatabaseHelper myDatabaseHelper;
         /*SQLite数据库方式存储数据*/
         /*创建数据库*/
         myDatabaseHelper=new MyDatabaseHelper(SqlDataOperation.this,"BookStore.db",null,2);
@@ -41,7 +42,7 @@ public class SqlDataOperation extends AppCompatActivity {
                 Log.d("SqlDataOperation","你点击了添加数据");
                 //添加数据的方法
                 ContentValues values=new ContentValues();
-                //向数据库里面填入第一条数据
+                /*//向数据库里面填入第一条数据
                 values.put("name","如果有真爱，那么一定是蓝色——蕾姆天下第一");
                 values.put("author","rookiexiaoqi");
                 values.put("pages", 520);
@@ -57,12 +58,15 @@ public class SqlDataOperation extends AppCompatActivity {
                 values.clear();
                 //另一种方法
                 db.execSQL("insert into Book(name,author,pages,price) values(?,?,?,?)",
-                        new String[]{"论蕾姆为什么天下第一","rookiexiaoqi","121","56.22"});
+                        new String[]{"论蕾姆为什么天下第一","rookiexiaoqi","121","56.22"});*/
                 db.execSQL("insert into Book(name,author,pages,price) values(?,?,?,?)",
                         new String[]{bookName,bookAuthor,bookPages,bookPrices});
+                Intent intent =new Intent(SqlDataOperation.this,BookCatalogue.class);
+                startActivity(intent);
+                finish();
             }
         });
-        Button upDataButton =findViewById(R.id.updata_sql_data);
+       /* Button upDataButton =findViewById(R.id.updata_sql_data);
         upDataButton.setOnClickListener(new View.OnClickListener() {
             @Override
             //更新数据的方法
@@ -110,6 +114,6 @@ public class SqlDataOperation extends AppCompatActivity {
                 //另一种写法
                 db.rawQuery("select * from book",null);
             }
-        });
+        });*/
     }
 }

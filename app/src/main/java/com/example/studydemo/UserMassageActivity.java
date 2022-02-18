@@ -62,7 +62,7 @@ public class UserMassageActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("UserMassageActivity","点击对了");
-                Intent intent=new Intent(UserMassageActivity.this,SqlDataOperation.class);
+                Intent intent=new Intent(UserMassageActivity.this,BookCatalogue.class);
                 startActivity(intent);
                 finish();
             }

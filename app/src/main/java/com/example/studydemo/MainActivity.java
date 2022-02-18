@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
                 String outUserNumber = loadUserNumber();
                 String outPassword = loadPassword();
                 if (!TextUtils.isEmpty(outUserNumber) && !TextUtils.isEmpty(outPassword)) {
-                    Log.d("MainActivity","有判断是否为空");
+                    Log.d("MainActivity","判断是不为空");
                     editText1.setText(outUserNumber);
                     editText2.setText(outPassword);
                     editText1.setSelection(outUserNumber.length());
@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else {
-                    Log.d("MainActivity","没有判断是否为空");
+                    Log.d("MainActivity","判断是为空");
                     if (!userNumber.equals(sqlUserNumber) || !userPassword.equals(sqlUserPassword)) {
                         Toast.makeText(MainActivity.this, "你输入的账号或者密码不正确，请检查后重新输入", Toast.LENGTH_LONG).show();
                     } else {

@@ -62,6 +62,21 @@ public class BookDetails extends AppCompatActivity {
         updateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                /*switch (view.getId()){
+                    case R.id.update_button:
+                        NotificationManager notificationManager=(NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+                        @SuppressLint("WrongConstant") Notification notification=new Notification.Builder(BookDetails.this)
+                                .setContentText("请谨慎修改书本信息")
+                                .setWhen(System.currentTimeMillis())
+                                .setSmallIcon(R.mipmap.ic_launcher)
+                                .setLargeIcon(BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher ))
+                                .setPriority(NotificationCompat.PRIORITY_MAX)
+                                .build();
+                        notificationManager.notify(1,notification);
+                        break;
+                    default:
+                        break;
+                }*/
                 Log.d("BookDetails","你点击了修改数据");
                 Intent intent=new Intent(BookDetails.this,BookDataUpdate.class);
                 intent.putExtra("book_name",bookName);
@@ -78,6 +93,14 @@ public class BookDetails extends AppCompatActivity {
                 Intent intent=new Intent(BookDetails.this,BookCatalogue.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+        Button moreOursButton =findViewById(R.id.more_ours_button);
+        moreOursButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BookDetails.this,MoreOurs.class);
+                startActivity(intent);
             }
         });
     }

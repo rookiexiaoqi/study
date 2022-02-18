@@ -5,7 +5,9 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyDemo">
-        <activity android:name=".BookDataUpdate"></activity>
+        <activity android:name=".MoreOurs"></activity>
+        <activity android:name=".BookDataUpdate" />
         <activity android:name=".BookDetails" />
         <activity android:name=".BookCatalogue" />
         <activity android:name=".SqlDataOperation" />
